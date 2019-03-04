@@ -4,4 +4,9 @@
 	if (!defined('__CONFIG__')) {
 		exit('fuck you self');
 	}
+
+	include_once "classes/DB.php";
+
+	$con = DB::getConnection();
+
 ?>

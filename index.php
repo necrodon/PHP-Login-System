@@ -10,5 +10,7 @@ require_once "inc/config.php";
 
     <?php echo "hello world"; ?>
 
+<a href="login.php">login</a>
+<a href="registrer.php">registrer</a>
 <?php require_once "inc/footer.php" ?>
 
