@@ -35,7 +35,7 @@ $(document)
 		async: true,
 	})
 	.done(function ajaxDone(data){
-
+		console.log(data);
 		if (data.redirect !== undefined) {
 			window.location == data.redirect;
 		} else if(data.error !== undefined){
@@ -90,17 +90,16 @@ $(document)
 		dataType: 'Json',
 		async: true,
 	})
-	.done(function ajaxDone(data){
-
-		if (data.redirect !== undefined) {
-			window.location == data.redirect;
-		} else if(data.error !== undefined){
-		 _error
-		 	.text(data.error)
-		 	.show();
+	.done(function ajaxDone(data) {
+		// Whatever data is 
+		console.log(data);
+		if(data.redirect !== undefined) {
+			window.location = data.redirect;
+		} else if(data.error !== undefined) {
+			_error
+				.html(data.error)
+				.show();
 		}
-
-
 	})
 
 	.fail(function ajaxFailed(e){
