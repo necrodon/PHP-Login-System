@@ -16,7 +16,7 @@ require_once "inc/config.php";
                         <figure class="avatar">
                             <img src="https://placehold.it/128x128">
                         </figure>
-                        <form>
+                        <form class="js-login">
                             <div class="field">
                                 <div class="control">
                                     <input class="input is-large" type="email" placeholder="Your Email" autofocus="">
@@ -35,6 +35,8 @@ require_once "inc/config.php";
                 </label>
                             </div>
                             <button class="button is-block is-info is-large is-fullwidth">Login</button>
+                            <div class="field js-error" style="display: none;">
+                            </div>
                         </form>
                     </div>
                     <p class="has-text-grey">
